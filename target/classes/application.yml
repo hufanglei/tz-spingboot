@@ -1,0 +1,38 @@
+com.yml: 
+   name: 你好
+   age: 12
+   number: ${random.int}
+   max: ${random.int(10)}
+   value: ${random.value}
+   
+   
+---
+ 
+spring:
+    profiles: dev
+server:
+    port: 9001
+    
+---
+  
+spring:
+    profiles: test1
+server:
+    port: 9002
+    
+---
+
+spring:
+    profiles: prod
+server:
+    port: 9003
+
+---
+spring:
+  profiles:
+     active: test1
+  
+ 
+ 
+   
+   
